@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <!-- Search Widget -->
+  @include('partials.widgets._meta')
+  @!section('header')
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  @include('partials._navbar')
+  
+  {{--  Main content  --}}
+  @!section('main-content')
+
+
+  <!-- Footer -->
+  @include('partials._footer')
+  @include('partials.widgets._footer-meta')
+  @!section('footer')
+
+</body>
+
+</html>
