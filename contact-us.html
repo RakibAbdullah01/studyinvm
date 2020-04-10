@@ -136,10 +136,11 @@
                 </div>
                 <div class="cell medium-6 large-7">
 
-                    <form method="POST">
+                    <form method="POST" action="contact.php">
                         <input id="csrf_token" name="csrf_token" type="hidden" value="IjIxMDFjNjBlODNhMWMxODY0NmQ0MWJkNjFiZTE0YTdmYzUyZDViNDci.EW8Ozw.zl2kVtY8uGMOBGQ9aD92TMbGoOo">
                         <input id="name" name="name" placeholder="Name" required type="text" value="">
                         <input id="email" name="email" placeholder="Email" required type="text" value="">
+                        <input id="text" name="subject" placeholder="Subject" required type="text" value="">
                         <textarea cols="30" id="message" name="message" placeholder="Your Message" required rows="6"></textarea>
                         <button type="submit" class='submit'> Send Message
                         </button>
