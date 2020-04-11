@@ -9,8 +9,14 @@
     <h1><span>Contact</span></h1>
 </div>
 
+<<<<<<< HEAD
 <section class="dark-bg-overlay parallax-bg" style="background-image:url('/img/living1.jpg');">
     <div class="overlay"></div>
+=======
+
+
+<section class="contact">
+>>>>>>> 0f1e712ecd62d81246dca1691e38cdc9b28fa52a
     <div class="grid-container">
         <h3 class="text-center">Welcome to visit our office</h3>
         <div class="grid-container">
@@ -75,5 +81,47 @@
         </form>
     </div>
 </section>
+
+@endsection
+
+
+
+@section('footer')
+
+<script>
+    $(document).ready(function(){
+						   
+
+                           //----------Select the first tab and div by default
+                           
+                           $('#vertical_tab_nav > ul > li > a').eq(0).addClass( "selected" );
+                           $('#vertical_tab_nav > div > article').eq(0).css('display','block');
+                       
+                       
+                           //---------- This assigns an onclick event to each tab link("a" tag) and passes a parameter to the showHideTab() function
+                                   
+                               $('#vertical_tab_nav > ul').click(function(e){
+                                   
+                             if($(e.target).is("a")){
+                             
+                               /*Handle Tab Nav*/
+                               $('#vertical_tab_nav > ul > li > a').removeClass( "selected");
+                               $(e.target).addClass( "selected");
+                               
+                               /*Handles Tab Content*/
+                               var clicked_index = $("a",this).index(e.target);
+                               $('#vertical_tab_nav > div > article').css('display','none');
+                               $('#vertical_tab_nav > div > article').eq(clicked_index).fadeIn();
+                               
+                             }
+                             
+                               $(this).blur();
+                               return false;
+                             
+                               });
+                               
+                            
+                       });//end ready	
+</script>
 
 @endsection
