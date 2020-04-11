@@ -3,52 +3,76 @@
 @section('main-content')
 
 
+
 <div class="page-header" style="background-image:url('/img/contact3.jpg'); background-position:top">
     <div class="top-gradient"></div>
     <h1><span>Contact</span></h1>
 </div>
 
-<section class="contact">
+<section class="dark-bg-overlay parallax-bg" style="background-image:url('/img/living1.jpg');">
+    <div class="overlay"></div>
     <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell medium-6 large-5">
-                <h4>Scholarship in Vietnam
-                </h4>
-                <p class="lead">EduExpress Overseas Education Consultancy</p>
+        <h3 class="text-center">Welcome to visit our office</h3>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6 large-5">
+                    <p class="lead"><i class="far fa-map-marker-alt"></i> Location</p>
+                    <p>
+                        3rd Floor,House#24<br>
+                        Green Road,Dhaka-1205,Bangladesh
+                    </p>
+                </div>
+                <div class="cell medium-6 large-7">
+                    <p class="lead"><i class="far fa-envelope"></i></i> Mail Us</p>
+                    <p>
+                        info@scholarshipinvietnam.com</p>
+                </div>
 
-                <p>
-                    <i class="far fa-map-marker-alt"></i>3rd Floor,House#24<br>
-
-                    Green Road,Dhaka-1205,Bangladesh
-                </p>
-                <p>
-                    <i class="far fa-envelope"></i>info@scholarshipinvietnam.com</p>
-
-                <p><i class="far fa-phone"></i> +880-1816585926</p>
-
-                <p><i class="far fa-phone"></i>+86-17851977372</p>
-
-                <p><i class="far fa-globe"></i>
-                    www.scholarshipinvietnam.com</p>
-                <p><i class="far fa-globe"></i>
-                    www.edu3xpress.com</p>
-            </div>
-            <div class="cell medium-6 large-7">
-
-                <form method="POST" action="contact.php">
-                    <input id="csrf_token" name="csrf_token" type="hidden"
-                        value="IjIxMDFjNjBlODNhMWMxODY0NmQ0MWJkNjFiZTE0YTdmYzUyZDViNDci.EW8Ozw.zl2kVtY8uGMOBGQ9aD92TMbGoOo">
-                    <input id="name" name="name" placeholder="Name" required type="text" value="">
-                    <input id="email" name="email" placeholder="Email" required type="text" value="">
-                    <input id="text" name="subject" placeholder="Subject" required type="text" value="">
-                    <textarea cols="30" id="message" name="message" placeholder="Your Message" required
-                        rows="6"></textarea>
-                    <button type="submit" class='submit'> Send Message
-                    </button>
-                </form>
+                <div class="cell medium-6 large-7">
+                    <p class="lead"><i class="fab fa-whatsapp"></i> Contact in WhatsApp</p>
+                    <p>
+                        +86-17851977372</p>
+                </div>
 
             </div>
         </div>
+        <div class="text-box text-left ">
+            <h3 class="text-center">Find us on Social Media</h3>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6 large-5">
+                    <a href="facebook.com/scholarshipinvietnam"target="_blank"><p class="lead"><i class="fab fa-facebook-square"></i> scholarshipinvietnam</p></a>
+                 </div>
+
+                <div class="cell medium-6 large-7">
+                    <a href="#"target="_blank"><p class="lead"><i class="fab fa-youtube-square"></i> eduexpress</p></a>
+                 </div>
+
+                 <div class="cell medium-6 large-7">
+                    <a href="#"target="_blank"><p class="lead"><i class="fab fa-instagram"></i>  eduexpress</p></a>
+                 </div>
+                 
+
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="contact">
+    <div class="grid-container">
+        <h4 class= "text-center">Leave us your question?
+        </h4>
+        <p class="text-center">We will reply you as soon as possible</p>
+        <form method="POST" action="contact.php">
+            <input id="csrf_token" name="csrf_token" type="hidden"
+                value="IjIxMDFjNjBlODNhMWMxODY0NmQ0MWJkNjFiZTE0YTdmYzUyZDViNDci.EW8Ozw.zl2kVtY8uGMOBGQ9aD92TMbGoOo">
+            <input id="name" name="name" placeholder="Name" required type="text" value="">
+            <input id="email" name="email" placeholder="Email" required type="text" value="">
+            <input id="text" name="subject" placeholder="Subject" required type="text" value="">
+            <textarea cols="30" id="message" name="message" placeholder="Your Message" required rows="6"></textarea>
+            <button type="submit" class='submit'> Send Message
+            </button>
+        </form>
     </div>
 </section>
 
