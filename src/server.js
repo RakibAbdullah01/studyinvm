@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const { engine } = require("express-edge");
 // const database = require("./config/db");
-const passport = require('passport');
+// const passport = require('passport');
 const flash = require('connect-flash')
 // const session = require('express-session')
 const session = require('cookie-session')
@@ -19,10 +19,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 
-app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.initialize())
+// app.use(passport.session())
 //passport
-require('./config/passportConfig')
+// require('./config/passportConfig')
 
 // app.use(async (req, res, next) => {
 //     app.locals.errors = req.flash('errors')
